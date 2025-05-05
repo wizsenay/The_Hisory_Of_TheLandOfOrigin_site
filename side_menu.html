@@ -25,45 +25,37 @@
                                 <li><a href="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <form>
-                            <label for="ani"><a href="ancient_period.html">Ancient period</a></label>
-                                <select id="ani">
-                                    <option><a href="ancient_period.html#anicent">Ancient Ethiopia</a></option>
-                                    <option><a href="ancient_period.html#kofa">Kingdom of Aksum</a></option>
-                                    <option><a href="ancient_period.html#amida">Éllä Amida</a></option>
-                                    <option><a href="ancient_period.html#izana">King Izana</a></option>
-                                    <option><a href="ancient_period.html#caleb">King Caleb (Éllä Atsbah)</a></option>
-                                    <option><a href="ancient_period.html#enislam">The The Entry of Islam into Ethiopia</a></option>
-                                    <option><a href="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</a></option>
-                                </select>
-                            </form>
-                        </li>
 
-                        <li>
-                            <label for="pages"><h2><a href="ancient_period.html">Ancient period</a><h2></h2></label>
-                            <select id="pages" onchange="goToPage(this)">
-                                <option value=""><h2><strong>Ancient Period</strong><h2></h2></option>
-                                <option value="ancient_period.html#anicent">Ancient Ethiopia</option>
-                                <option value="ancient_period.html#kofa">Kingdom of Aksum</option>
-                                <option value="ancient_period.html#amida">Éllä Amida</option>
-                                <option value="ancient_period.html#izana">King Izana</option>
-                                <option value="ancient_period.html#caleb">King Caleb (Éllä Atsbah)</option>
-                                <option value="ancient_period.html#enislam">The Entry of Islam into Ethiopia</option>
-                                <option value="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</option>
-                            </select>
-                            <script>
-                                function goToPage(select) {
-                                  const page = select.value;
-                                  if (page) {
-                                    window.location.href = page;
-                                  }
-                                  }
-                            </script>
-                        </li>
+                        
 
                         <li>
                             <a href="medivel_period.html"><h2>Mendival period</h2></a>
+                            <ul>
+                                <li>
+                                    <h3><a href="medivel_period.html#zag">Zagwe Kingdom</a></h3>
+                                    <ul>
+                                        <li><a href="medivel_period.html#lal-li">Llibela </a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h3><a href="medivel_period.html#solo-ki">Solomonic Kingdom</a></h3>
+                                    <ul>
+                                        <li><a href="medivel_period.html#yag-ts">Yagb'a Tsion</a></li>
+                                        <li><a href="medivel_period.html#amd-ts">A'mde Tsion</a></li>
+                                        <li><a href="medivel_period.html#dav-i">David I</a></li>
+                                        <li><a href="medivel_period.html#the-i">Theodores I</a></li>
+                                        <li><a href="medivel_period.html#ysh-t">Yshak The First</a></li>
+                                        <li><a href="medivel_period.html#zer-y">Zera Yacob</a></li>
+                                        <li><a href="medivel_period.html#alxa-d">Alexander</a></li>
+                                        <li><a href="medivel_period.html#noa-d">Naod</a></li>
+                                        <li><a href="medivel_period.html#lib-d">Libne Dingl</a></li>
+                                        <li><a href="medivel_period.html#gela-u">Gelaudius</a></li>
+                                        <li><a href="medivel_period.html#min-s">Minas</a></li>
+                                        <li><a href="medivel_period.html#ser-d">Sertse Dngl</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
                         </li>
 
                         <li>
@@ -78,6 +70,28 @@
 
                 <li>
                     <a href="event.html"><h1>Historical And Cultural Event</h1></a>
+                </li>
+
+                <li>
+                    <label for="pages"><h2><a href="ancient_period.html">Ancient period</a><h2></h2></label>
+                    <select id="pages" onchange="goToPage(this)">
+                        <option value=""><h2><strong>Ancient Period</strong><h2></h2></option>
+                        <option value="ancient_period.html#anicent">Ancient Ethiopia</option>
+                        <option value="ancient_period.html#kofa">Kingdom of Aksum</option>
+                        <option value="ancient_period.html#amida">Éllä Amida</option>
+                        <option value="ancient_period.html#izana">King Izana</option>
+                        <option value="ancient_period.html#caleb">King Caleb (Éllä Atsbah)</option>
+                        <option value="ancient_period.html#enislam">The Entry of Islam into Ethiopia</option>
+                        <option value="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</option>
+                    </select>
+                    <script>
+                        function goToPage(select) {
+                          const page = select.value;
+                          if (page) {
+                            window.location.href = page;
+                          }
+                          }
+                    </script>
                 </li>
         </div>
     </body>
