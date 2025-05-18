@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Land of Origin</title>
+  <link rel="stylesheet" href="style/header_2.css">
+</head>
+
+<body>
+    <header>
+        <div class="top_navigation_container">
+        
+            <div class="logo">
+              <img src="image/logo.png" height="80px" alt="Logo">
+            </div>
+                        
+            
+            <nav>
+              <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+              <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ehtiopia_history.html">Ethiopian History</a></li>
+                <li><a href="place.html">Places to Visit</a></li>
+                <li><a href="event.html">Festivals & Celebrations</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
+            </nav>
+
+        
+        <script>
+          const toggleBtn = document.getElementById('menu-toggle');
+          const navLinks = document.getElementById('nav-links');
+
+          toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+          });
+        </script>
+        </div>
+        <div class="bottom_nav_container">
+            <div class = "tex" id = "tex">
+                <div class="bg-layer" id="bg1"></div>
+  <div class="bg-layer" id="bg2"></div>
+                <h1>Land Of Origin</h1>
+                <p>Discover Ethiopia’s rich history and culture</p>
+                <script>
+                    const heroText = document.getElementById("tex");
+
+                    window.addEventListener("scroll", () => {
+                      const scrollY = window.scrollY;
+
+                      // Move up and scale down
+                      let moveUp = scrollY * 0.5;
+                      let scaleDown = Math.max(1 - scrollY / 1000, 0.8);
+                      let fade = Math.max(1 - scrollY / 500, 0);
+
+                      heroText.style.transform = `translate(-50%, calc(-50% - ${moveUp}px)) scale(${scaleDown})`;
+                      heroText.style.opacity = fade;
+                    });
+
+                    const background = document.querySelector('.bottom_nav_container');
+
+                    const images = [
+                      'image/header_image/10.jpg',
+                      'image/header_image/1.jpg',
+                      'image/header_image/2.jpg',
+                      'image/header_image/3.jpg',
+                      'image/header_image/4.jpg',
+                      'image/header_image/5.jpg',
+                      'image/header_image/6.jpg',
+                      'image/header_image/7.jpg',
+                      'image/header_image/8.jpg',
+                      'image/header_image/9.jpg',
+                      'image/header_image/10.jpg'
+                    ];
+
+                    
+                 let currentIndex = 0;
+
+                  function changeBackground() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    background.style.backgroundImage = `url('${images[currentIndex]}')`;
+                  }
+
+                  // Set initial background
+                  background.style.backgroundImage = `url('${images[0]}')`;
+
+                  // Change every 5 seconds
+                  setInterval(changeBackground, 5000);  
+                </script>
+          </div>
+
+        </div>
+    </header>
+    
+</body>
+</html>

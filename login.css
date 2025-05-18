@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-image:url("../image/4k-pc-wallpaper-ai-art.png");
+    background-image:url("image/Bet_Giyorgis_Rock-Hewn_Church_-_Lalibela.jpg");
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover; 
@@ -70,29 +70,27 @@ input:valid ~ label {
     color: #fff;
     font-size: 1.2rem;
     top: 20px;
-     }
-     .forget {
-        margin: 35px 0;
-        font-size: 0.85rem;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-     }
-     .forget label {
-        display: flex;
-        align-items: center;
-    
-     }
-     .forget label input {
-        margin-right: 3px;
-    }
-    .forget a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 600;
-    
-     }
-     .forget a:hover {
+}
+.forget {
+   margin: 35px 0;
+   font-size: 0.85rem;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+}
+.forget label {
+  display: flex;
+  align-items: center;
+}
+.forget label input {
+  margin-right: 3px;
+}
+.forget a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
+}
+.forget a:hover {
         text-decoration: underline;
      }
      button {

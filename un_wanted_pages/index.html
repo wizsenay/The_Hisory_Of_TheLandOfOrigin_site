@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+          <link rel="stylesheet" href="style/header_2.css">
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <header>
+        <div class="top_navigation_container">
+        
+            <div class="logo">
+              <img src="image/logo.png" height="80px" alt="Logo">
+            </div>
+                        
+            
+            <nav>
+              <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+              <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ehtiopia_history.html">Ethiopian History</a></li>
+                <li><a href="place.html">Places to Visit</a></li>
+                <li><a href="event.html">Festivals & Celebrations</a></li>
+                <li><a href="about.html">About Us</a></li>
+              </ul>
+            </nav>
+
+        
+        <script>
+          const toggleBtn = document.getElementById('menu-toggle');
+          const navLinks = document.getElementById('nav-links');
+
+          toggleBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+          });
+        </script>
+        </div>
+        <div class="bottom_nav_container">
+            <div class = "tex" id = "tex">
+                <div class="bg-layer" id="bg1"></div>
+  <div class="bg-layer" id="bg2"></div>
+                <h1>Land Of Origin</h1>
+                <p>Discover Ethiopia’s rich history and culture</p>
+                <script>
+                    const heroText = document.getElementById("tex");
+
+                    window.addEventListener("scroll", () => {
+                      const scrollY = window.scrollY;
+
+                      // Move up and scale down
+                      let moveUp = scrollY * 0.5;
+                      let scaleDown = Math.max(1 - scrollY / 1000, 0.8);
+                      let fade = Math.max(1 - scrollY / 500, 0);
+
+                      heroText.style.transform = `translate(-50%, calc(-50% - ${moveUp}px)) scale(${scaleDown})`;
+                      heroText.style.opacity = fade;
+                    });
+
+                    const background = document.querySelector('.bottom_nav_container');
+
+                    const images = [
+                      'image/header_image/10.jpg',
+                      'image/header_image/1.jpg',
+                      'image/header_image/2.jpg',
+                      'image/header_image/3.jpg',
+                      'image/header_image/4.jpg',
+                      'image/header_image/5.jpg',
+                      'image/header_image/6.jpg',
+                      'image/header_image/7.jpg',
+                      'image/header_image/8.jpg',
+                      'image/header_image/9.jpg',
+                      'image/header_image/10.jpg'
+                    ];
+
+                    
+                 let currentIndex = 0;
+
+                  function changeBackground() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    background.style.backgroundImage = `url('${images[currentIndex]}')`;
+                  }
+
+                  // Set initial background
+                  background.style.backgroundImage = `url('${images[0]}')`;
+
+                  // Change every 5 seconds
+                  setInterval(changeBackground, 5000);  
+                </script>
+          </div>
+
+        </div>
+        </header>
+
+        <div style="display: flex;">
+            
+            <div style="flex:1; border:1px solid;">
+                <ul>
+                    <li>
+                        <h1><a href="index.html">Home</a></h1>
+                    </li>
+
+                    <li>
+                        <h1><a href="ehtiopia_history.html">The History Of Ethiopia</a></h1>
+                        <ul>
+                            <li>
+                                <h2><a href="ancient_period.html">Ancient period</a></a></h2>
+                                <ul>
+                                    <li><a href="ancient_period.html#anicent">Ancient Ethiopia</a></li>
+                                    <li><a href="ancient_period.html#kofa">Kingdom of Aksum</a></li>
+                                    <li><a href="ancient_period.html#amida">Éllä Amida</a></li>
+                                    <li><a href="ancient_period.html#izana">King Izana</a></li>
+                                    <li><a href="ancient_period.html#caleb">King Caleb (Éllä Atsbah)</a></li>
+                                    <li><a href="ancient_period.html#enislam">The The Entry of Islam into Ethiopia</a></li>
+                                    <li><a href="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</a></li>
+                                </ul>
+                            </li>
+
+                            
+
+                            <li>
+                                <a href="medivel_period.html"><h2>Mendival period</h2></a>
+                                <ul>
+                                    <li>
+                                        <h3><a href="medivel_period.html#zag">Zagwe Kingdom</a></h3>
+                                        <ul>
+                                            <li><a href="medivel_period.html#lal-li">Llibela </a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3><a href="medivel_period.html#solo-ki">Solomonic Kingdom</a></h3>
+                                        <ul>
+                                            <li><a href="medivel_period.html#yag-ts">Yagb'a Tsion</a></li>
+                                            <li><a href="medivel_period.html#amd-ts">A'mde Tsion</a></li>
+                                            <li><a href="medivel_period.html#dav-i">David I</a></li>
+                                            <li><a href="medivel_period.html#the-i">Theodores I</a></li>
+                                            <li><a href="medivel_period.html#ysh-t">Yshak The First</a></li>
+                                            <li><a href="medivel_period.html#zer-y">Zera Yacob</a></li>
+                                            <li><a href="medivel_period.html#alxa-d">Alexander</a></li>
+                                            <li><a href="medivel_period.html#noa-d">Naod</a></li>
+                                            <li><a href="medivel_period.html#lib-d">Libne Dingl</a></li>
+                                            <li><a href="medivel_period.html#gela-u">Gelaudius</a></li>
+                                            <li><a href="medivel_period.html#min-s">Minas</a></li>
+                                            <li><a href="medivel_period.html#ser-d">Sertse Dngl</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a  href="pre_modern.html"><h2>The 17th and 18th centuries</h2></a>
+                            </li>
+
+                            <li>
+                                <a  href="modern_period.html"><h2>Modern period</h2></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="place.html"><h1>Historical And Cultural places</h1></a>
+                        <ul>
+                            <li><a href="historical_places.html">Historical Places of Ethiopia</a></li>
+                            <li><a href="cultural_sites.html">Cultural Sites of Ethiopia</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="event.html"><h1>Historical And Cultural Event</h1></a>
+                    </li>
+            </div>
+        
+        <div style="flex: 3; padding: 15px;" >
+        
+            <div>
+                <h1>ETHIOPIA</h1>
+                <p>Ethiopia, often referred to as the "Cradle of Humankind," holds a profound place in the story of our species. It was here that the world-renowned fossil "Lucy" (Australopithecus afarensis), estimated to be over 3 million years old, was discovered — offering vital clues about early human evolution. With a history stretching back thousands of years, Ethiopia is one of the few African countries never colonized, preserving a distinct culture, alphabet, and calendar. Its ancient kingdoms, such as Axum, played a major role in global trade and the spread of Christianity long before many Western nations adopted the faith.</p>
+                <p>Beyond its historical and archaeological significance, Ethiopia continues to impact the world in everyday ways. Most famously, it is the birthplace of coffee — a gift that has transformed global cultures and routines. Legend tells of a goat herder named Kaldi who noticed his goats becoming energetic after eating red berries from a certain tree, giving rise to what would become a worldwide obsession. Ethiopia is also a land of vibrant traditions, colorful festivals, and a landscape that ranges from rugged highlands to the otherworldly Danakil Depression. As both an ancient and modern marvel, Ethiopia offers a legacy that bridges the origins of humankind with cultural treasures that continue to influence the world today.</p>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div style="width:50%; align-items: center;">
+                    <img src="image/Ethiopian Emperors and Historical Landmarks (2).png" style="padding-bottom: 30px;"  width="100%">
+                </div>
+                <dvi style="width: 50%; padding: 0 20px;">
+                    <h1><a href="ehtiopia_history.html">HISTORY OF ETHIOPIA</a></h1>
+                    <hr width="80%">
+                    <p>Ethiopia’s history is as vast and majestic as its landscapes. Known as one of the oldest nations in the world, Ethiopia has been home to powerful kingdoms, remarkable civilizations, and deep-rooted traditions that span thousands of years. From the ancient Axumite Empire and the rock-hewn churches of Lalibela, to its heroic stand against colonialism, Ethiopia’s story is one of resilience, pride, and rich cultural heritage. As the only African country never colonized, Ethiopia has preserved its unique identity — from its own alphabet and calendar to being the birthplace of coffee and one of the earliest adopters of Christianity. Journey through the timeline of a nation that truly stands as the heart of African history.</p>
+                </dvi>
+            </div>
+
+            
+
+            <div style="display: flex; align-items: center;">
+                <div style="width:50%;">
+                    <video controls autoplay muted loop style="padding: 10px;" width="100%">
+                        <source src="video/lv_0_20250504135851.mp4"  type="video/mp4">
+                    </video>
+                </div>
+                <dvi style="width: 50%; padding: 0 20px;">
+                    <h1><a href="event.html">EVENTS IN ETHIOPIA</a></h1>
+                    <hr width="80%">
+                    <p>Ethiopia’s history is as vast and majestic as its landscapes. Known as one of the oldest nations in the world, Ethiopia has been home to powerful kingdoms, remarkable civilizations, and deep-rooted traditions that span thousands of years. From the ancient Axumite Empire and the rock-hewn churches of Lalibela, to its heroic stand against colonialism, Ethiopia’s story is one of resilience, pride, and rich cultural heritage. As the only African country never colonized, Ethiopia has preserved its unique identity — from its own alphabet and calendar to being the birthplace of coffee and one of the earliest adopters of Christianity. Journey through the timeline of a nation that truly stands as the heart of African history.</p>
+                </dvi>
+            </div>
+   
+            <div style="display: flex; align-items: center;">
+                <div style="width:50%;">
+                    <video controls autoplay muted loop style="padding: 10px;" width="100%">
+                        <source src="video/lv_0_20250504160913.mp4"  type="video/mp4">
+                    </video>
+                </div>
+                <dvi style="width: 50%; padding: 0 20px;">
+                    <h1><a href="event.html">HISTORICAL AND CULTURAL PLACES OF ETHIOPIA</a></h1>
+                    <hr width="80%">
+                    <p>Ethiopia is a land where history breathes through every stone and culture thrives in every corner. From the towering obelisks of Axum and the ancient castles of Gondar, to the mystical rock-hewn churches of Lalibela and the vibrant rituals of the Omo Valley tribes, Ethiopia offers a rich tapestry of unforgettable landmarks. These sites are not only stunning to behold but tell the story of a civilization that has stood strong for thousands of years. Whether you're walking the sacred paths of Harar, one of the oldest Islamic cities in the world, or gazing over the Simien Mountains, each place holds deep spiritual and historical significance — inviting all who visit to connect with Ethiopia’s soul.</p>
+                </dvi>
+            </div>
+
+            </div>  
+        </div>
+
+
+
+        <footer>
+            <hr width="100%">
+        <div style="display: flex;">
+            <div style="border: solid; padding: 30px;">
+                <h2>contact us</h2>
+                
+                <p>&#9993;<a href="mailto: tomasfrehiwot@gmila.com">tomasfrehiwot@gmail.com</a></p>
+                
+                <p>&#128222;<a href="tel:+251901916679">+251-901-916-679</a></p>
+                <p><a href=""><img src="image/logo-linkedin-1536.png" height="100px"> </a></p>
+                <p>
+                    <a href="https://t.me/Wiz_senay"><img src="image/telegram-logo.webp" height="50px"></a>
+                    <a href=""><img src="image/x-logo-modified.png" height="38px"> </a>
+                </p>
+            </div >
+                <ul>
+                    <li>
+                        <h2>The History of Ethiopia</h2>
+                        <ul>
+                            <li><p><strong>ancient period</strong> </p></li>
+                            <li><p><strong>mendivel period</strong></p></li>
+                            <li><p><strong>Modern period</strong></p></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>Historical and cultural places</h2>
+                        <ul>
+
+                        </ul>
+                    </li>
+                    <Li>
+                        <h2>Historical and cultural event</h2>
+                    </Li>
+                </ul>
+
+
+            </div>
+        </div>
+        <p style="text-align: center;">&copy;2025 The history of Ethiopia. All rights reserved.</p>
+        </footer>
+    </body>
+</htm>

@@ -1,0 +1,89 @@
+.main_navigation {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+    }
+
+header {
+      background: #111;
+      position: relative;
+    }
+
+.headline {
+      position: relative;
+      height: 400px;
+      color: #fff;
+      text-align: center;
+      background: url('../image/lalibela_landscap.jpg') no-repeat center center;
+      background-size: cover;
+    }
+
+.headline::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(17, 17, 17, 0.5);
+      bottom: 30px;
+    }
+
+.inner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      text-align: center;
+      color: white;
+      opacity: 0;
+      animation: fade-in 0.75s 0.25s ease-in forwards;
+    }
+
+.inner h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+.inner p {
+      font-size: 1.4em;
+      font-style: italic;
+    }
+
+nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      background: transparent;
+      transition: background 0.3s ease;
+    }
+
+nav.scrolled {
+      background: rgba(17, 17, 17, 0.9);
+    }
+
+nav ul {
+      float: right;
+      list-style: none;
+      margin: 0;
+      padding: 25px;
+    }
+
+nav li {
+      float: left;
+      margin-left: 20px;
+    }
+
+nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+@keyframes fade-in {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+}
