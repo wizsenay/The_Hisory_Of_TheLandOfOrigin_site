@@ -2,163 +2,261 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>LAND OF ORIGIN</title>  
+        <title>LAND OF ORIGIN</title>
+        <link rel="stylesheet" href="style/header_2.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/footer.css">
+
     </head>
     <body>
-        <header>
-            <div style="display: flex;  align-items: center; justify-content: space-between;">
-                <div>
-                    <img src="image/logo.png" height="80px" alt="Logo">
-                </div>
+        <div class="container">
+            <div class="he-ad">
             
-                <div style="text-align: center;">
-                    LAND OF ORIGIN
-                </div>        
-    
-                <div>
-                    <table>
-                        <tr>
-                            <td><a href="index.html"><strong>Home</strong></a>&emsp;|&emsp;</td>
-                            <td><a href="ehtiopia_history.html"><strong>Ethiopian History</strong></a>&emsp;|&emsp;</td>
-                            <td><a href="place.html"><strong>Places to Visit</strong></a>&emsp;|&emsp;</td>               
-                            <td><a href="event.html"><strong>Festivals & Celebrations</strong></a>&emsp;|&emsp;</td>
-                            <td><a href="about.html"><strong>About us</strong></a></td>
-                        </tr>
-                    </table>
+                <div class="top_navigation_container">
+                    <div class="top-row">
+                        <div class="logo">
+                            <img src="image/logo.png" height="80px" alt="Logo">
+                        </div>                            
+                    
+                        <nav>
+                            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+                            <ul class="nav-links" id="nav-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="ehtiopia_history.html">Ethiopian History</a></li>
+                                <li><a href="place.html">Places to Visit</a></li>
+                                <li><a href="event.html">Festivals & Celebrations</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                        <script>
+                            const toggleBtn = document.getElementById('menu-toggle');
+                            const navLinks = document.getElementById('nav-links');
+
+                            toggleBtn.addEventListener('click', () => {
+                                navLinks.classList.toggle('show');
+                            });
+                        </script>
+                    </div>
+
+                    <hr class="new-line" width="100%">
                 </div>
-            </div>
-            <hr width="100%">
-        </header>
-        
-        <div style="display: flex;">
-            
-            <div style="flex:1; border:1px solid;">
-                <ul>
-                    <li>
-                        <h1><a href="index.html">Home</a></h1>
-                    </li>
+                
+                <div class="bottom_nav_container">
+                    <div class = "tex" id = "tex">
+                        <div class="bg-layer" id="bg1"></div>
+                        <div class="bg-layer" id="bg2"></div>
+                        
+                        <h1>Land Of Origin</h1>
+                        <p>Discover Ethiopia’s rich history and culture</p>
+                        
+                        <script>
+                            const heroText = document.getElementById("tex");
 
-                    <li>
-                        <h1><a href="ehtiopia_history.html">The History Of Ethiopia</a></h1>
-                        <ul>
-                            <li>
-                                <h2><a href="ancient_period.html">Ancient period</a></a></h2>
-                                <ul>
-                                    <li><a href="ancient_period.html#anicent">Ancient Ethiopia</a></li>
-                                    <li><a href="ancient_period.html#kofa">Kingdom of Aksum</a></li>
-                                    <li><a href="ancient_period.html#amida">Éllä Amida</a></li>
-                                    <li><a href="ancient_period.html#izana">King Izana</a></li>
-                                    <li><a href="ancient_period.html#caleb">King Caleb (Éllä Atsbah)</a></li>
-                                    <li><a href="ancient_period.html#enislam">The The Entry of Islam into Ethiopia</a></li>
-                                    <li><a href="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</a></li>
-                                </ul>
-                            </li>
+                            window.addEventListener("scroll", () => {
+                            const scrollY = window.scrollY;
 
+                            // Move up and scale down
+                            let moveUp = scrollY * 0.5;
+                            let scaleDown = Math.max(1 - scrollY / 1000, 0.8);
+                            let fade = Math.max(1 - scrollY / 500, 0);
+
+                            heroText.style.transform = `translate(-50%, calc(-50% - ${moveUp}px)) scale(${scaleDown})`;
+                            heroText.style.opacity = fade;
+                            });
+
+
+                            const background = document.querySelector('.bottom_nav_container');
+                            const images = [
+                            'image/header_image/10.jpg',
+                            'image/header_image/1.jpg',
+                            'image/header_image/2.jpg',
+                            'image/header_image/3.jpg',
+                            'image/header_image/4.jpg',
+                            'image/header_image/5.jpg',
+                            'image/header_image/6.jpg',
+                            'image/header_image/7.jpg',
+                            'image/header_image/8.jpg',
+                            'image/header_image/9.jpg',
+                            'image/header_image/10.jpg'
+                            ];
                             
+                            let currentIndex = 0;
 
-                            <li>
-                                <a href="medivel_period.html"><h2>Mendival period</h2></a>
-                                <ul>
-                                    <li>
-                                        <h3><a href="medivel_period.html#zag">Zagwe Kingdom</a></h3>
-                                        <ul>
-                                            <li><a href="medivel_period.html#lal-li">Llibela </a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h3><a href="medivel_period.html#solo-ki">Solomonic Kingdom</a></h3>
-                                        <ul>
-                                            <li><a href="medivel_period.html#yag-ts">Yagb'a Tsion</a></li>
-                                            <li><a href="medivel_period.html#amd-ts">A'mde Tsion</a></li>
-                                            <li><a href="medivel_period.html#dav-i">David I</a></li>
-                                            <li><a href="medivel_period.html#the-i">Theodores I</a></li>
-                                            <li><a href="medivel_period.html#ysh-t">Yshak The First</a></li>
-                                            <li><a href="medivel_period.html#zer-y">Zera Yacob</a></li>
-                                            <li><a href="medivel_period.html#alxa-d">Alexander</a></li>
-                                            <li><a href="medivel_period.html#noa-d">Naod</a></li>
-                                            <li><a href="medivel_period.html#lib-d">Libne Dingl</a></li>
-                                            <li><a href="medivel_period.html#gela-u">Gelaudius</a></li>
-                                            <li><a href="medivel_period.html#min-s">Minas</a></li>
-                                            <li><a href="medivel_period.html#ser-d">Sertse Dngl</a></li>
-                                        </ul>
-                                    </li>
+                            function changeBackground() {
+                                currentIndex = (currentIndex + 1) % images.length;
+                                background.style.backgroundImage = `url('${images[currentIndex]}')`;
+                            }
 
-                                </ul>
-                            </li>
-                            <li>
-                                <a  href="pre_modern.html"><h2>The 17th and 18th centuries</h2></a>
-                            </li>
+                            // Set initial background
+                            background.style.backgroundImage = `url('${images[0]}')`;
 
-                            <li>
-                                <a  href="modern_period.html"><h2>Modern period</h2></a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="place.html"><h1>Historical And Cultural places</h1></a>
-                        <ul>
-                            <li><a href="historical_places.html">Historical Places of Ethiopia</a></li>
-                            <li><a href="cultural_sites.html">Cultural Sites of Ethiopia</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="event.html"><h1>Historical And Cultural Event</h1></a>
-                    </li>
+                            // Change every 5 seconds
+                            setInterval(changeBackground, 5000);  
+                        </script>
+                    </div>
+                
+                </div>
+            
             </div>
         
-        <div style="flex: 3; padding: 15px;" >
-            <h1>Historical and Cultural Place</h1>
+            <div class="main-side">
+                
+                <div class="main-side-bar">
+                    <div class="burger-icon" id="burger-icon">&#128220;Scroll &nbsp; > &nbsp;Discover</div>
+                    <div class="side-bar" id="side-bar">
+                        <ul>
+                            <li id="upper-list">
+                                <h1><a href="index.html">Home</a></h1>
+                            </li>
 
-        <ul>
-            <li><a href="historical_places.html">Historical Places of Ethiopia</a></li>
-            <li><a href="cultural_sites.html">Cultural Sites of Ethiopia</a></li>
-        </ul>
-            <p>Ethiopia is home to some of the most remarkable historical landmarks in Africa, reflecting its ancient civilization and religious significance. One of the most iconic sites is Axum, the former capital of the Aksumite Empire, believed to be the home of the Queen of Sheba and the Ark of the Covenant. The massive obelisks (stelae), royal tombs, and ancient inscriptions found in Axum highlight Ethiopia's rich and early role in global history.</p>
-            <p>Another crown jewel of Ethiopian heritage is Lalibela, famous for its rock-hewn churches carved out of solid volcanic rock in the 12th century. These monolithic structures, still active places of worship today, are considered a symbol of faith and architectural brilliance. Lalibela is often referred to as the "New Jerusalem" and stands as a testament to Ethiopia’s long-standing Christian traditions and engineering creativity.</p>
-            <p>Ethiopia also offers diverse cultural experiences through places like Harar Jugol, the fourth holiest city in Islam, known for its colorful markets and ancient mosques, and Gondar, which boasts medieval castles and royal baths from the era of Emperor Fasilides. From the Simien Mountains to Lake Tana's ancient monasteries, each location tells a story of a nation that has embraced multiple cultures, religions, and traditions over millennia.</p>
-        </div>
-        </div>
-        <footer>
-            <hr width="100%">
-            <div style="display: flex;">
-                <div style="border: solid; padding: 30px;">
-                    <h2>contact us</h2>
+                            <li>
+                                <h1><a href="ehtiopia_history.html">The History Of Ethiopia</a></h1>
+                                <ul>
+                                    <li>
+                                        <h2><a href="ancient_period.html">Ancient period</a></h2>
+                                        <ul>
+                                            <li><a href="ancient_period.html#anicent">Ancient Ethiopia</a></li>
+                                            <li><a href="ancient_period.html#kofa">Kingdom of Aksum</a></li>
+                                            <li><a href="ancient_period.html#amida">Éllä Amida</a></li>
+                                            <li><a href="ancient_period.html#izana">King Izana</a></li>
+                                            <li><a href="ancient_period.html#caleb">King Caleb (Éllä Atsbah)</a></li>
+                                            <li><a href="ancient_period.html#enislam">The The Entry of Islam into Ethiopia</a></li>
+                                            <li><a href="ancient_period.html#medmap">Ancient and medieval map of Ethiopia</a></li>
+                                        </ul>
+                                    </li>
+
+                                    
+
+                                    <li>
+                                        <a href="medivel_period.html"><h2>Mendival period</h2></a>
+                                        <ul>
+                                            <li>
+                                                <h3><a href="medivel_period.html#zag">Zagwe Kingdom</a></h3>
+                                                <ul>
+                                                    <li><a href="medivel_period.html#lal-li">Llibela </a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h3><a href="medivel_period.html#solo-ki">Solomonic Kingdom</a></h3>
+                                                <ul>
+                                                    <li><a href="medivel_period.html#yag-ts">Yagb'a Tsion</a></li>
+                                                    <li><a href="medivel_period.html#amd-ts">A'mde Tsion</a></li>
+                                                    <li><a href="medivel_period.html#dav-i">David I</a></li>
+                                                    <li><a href="medivel_period.html#the-i">Theodores I</a></li>
+                                                    <li><a href="medivel_period.html#ysh-t">Yshak The First</a></li>
+                                                    <li><a href="medivel_period.html#zer-y">Zera Yacob</a></li>
+                                                    <li><a href="medivel_period.html#alxa-d">Alexander</a></li>
+                                                    <li><a href="medivel_period.html#noa-d">Naod</a></li>
+                                                    <li><a href="medivel_period.html#lib-d">Libne Dingl</a></li>
+                                                    <li><a href="medivel_period.html#gela-u">Gelaudius</a></li>
+                                                    <li><a href="medivel_period.html#min-s">Minas</a></li>
+                                                    <li><a href="medivel_period.html#ser-d">Sertse Dngl</a></li>
+                                                </ul>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a  href="pre_modern.html"><h2>The 17th and 18th centuries</h2></a>
+                                    </li>
+
+                                    <li>
+                                        <a  href="modern_period.html"><h2>Modern period</h2></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="place.html"><h1>Historical And Cultural places</h1></a>
+                                <ul>
+                                    <li><a href="historical_places.html">Historical Places of Ethiopia</a></li>
+                                    <li><a href="cultural_sites.html">Cultural Sites of Ethiopia</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="event.html"><h1>Historical And Cultural Event</h1></a>
+                                <ul>
+                                    <li><a href="historical_places.html">Historical Event of Ethiopia</a></li>
+                                    <li><a href="cultural_sites.html">Cultural Event of Ethiopia</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                     
-                    <p>&#9993;<a href="mailto: tomasfrehiwot@gmila.com">tomasfrehiwot@gmail.com</a></p>
-                    
-                    <p>&#128222;<a href="tel:+251901916679">+251-901-916-679</a></p>
-                    <p><a href=""><img src="image/logo-linkedin-1536.png" height="100px"> </a></p>
-                    <p>
-                        <a href="https://t.me/Wiz_senay"><img src="image/telegram-logo.webp" height="50px"></a>
-                        <a href=""><img src="image/x-logo-modified.png" height="38px"> </a>
-                    </p>
-                </div >
-                    <ul>
-                        <li>
-                            <h2>The History of Ethiopia</h2>
-                            <ul>
-                                <li><p><strong>ancient period</strong> </p></li>
-                                <li><p><strong>mendivel period</strong></p></li>
-                                <li><p><strong>Modern period</strong></p></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2>Historical and cultural places</h2>
-                            <ul>
-    
-                            </ul>
-                        </li>
-                        <Li>
-                            <h2>Historical and cultural event</h2>
-                        </Li>
-                    </ul>
-    
-    
+                    <script>
+                        const burger = document.getElementById('burger-icon');
+                        const sidebar = document.getElementById('side-bar');
+
+                        burger.addEventListener('click', () => {
+                            sidebar.classList.toggle('open');
+                        });
+                    </script>
+                </div>
+        
+                <div class ="main-content" >
+                    <h1>Historical and Cultural Place</h1>
+
+                <ul>
+                    <li><a href="historical_places.html">Historical Places of Ethiopia</a></li>
+                    <li><a href="cultural_sites.html">Cultural Sites of Ethiopia</a></li>
+                </ul>
+                    <p>Ethiopia is home to some of the most remarkable historical landmarks in Africa, reflecting its ancient civilization and religious significance. One of the most iconic sites is Axum, the former capital of the Aksumite Empire, believed to be the home of the Queen of Sheba and the Ark of the Covenant. The massive obelisks (stelae), royal tombs, and ancient inscriptions found in Axum highlight Ethiopia's rich and early role in global history.</p>
+                    <p>Another crown jewel of Ethiopian heritage is Lalibela, famous for its rock-hewn churches carved out of solid volcanic rock in the 12th century. These monolithic structures, still active places of worship today, are considered a symbol of faith and architectural brilliance. Lalibela is often referred to as the "New Jerusalem" and stands as a testament to Ethiopia’s long-standing Christian traditions and engineering creativity.</p>
+                    <p>Ethiopia also offers diverse cultural experiences through places like Harar Jugol, the fourth holiest city in Islam, known for its colorful markets and ancient mosques, and Gondar, which boasts medieval castles and royal baths from the era of Emperor Fasilides. From the Simien Mountains to Lake Tana's ancient monasteries, each location tells a story of a nation that has embraced multiple cultures, religions, and traditions over millennia.</p>
                 </div>
             </div>
-            <p style="text-align: center;">&copy;2025 The history of Ethiopia. All rights reserved.</p>
-        </footer>
+        
+            <div class="foo-ter">
+                    <hr>
+                    <div class="footer-content">
+                        <div class="contact">
+                            <h2>contact us</h2>
+                            
+                            <p>&#9993;<a href="mailto: example@gmila.com">example@gmail.com</a></p>
+                            
+                            <p>&#128222;<a href="tel:+251999999999">+251-999-999-999</a></p>
+                            <div class="footer-social">
+                                <a href="#"><img src="image/logo-linkedin-1536.png" alt="likedin" height="40px"> </a>
+                                <a href="#"><img src="image/telegram-logo.webp" alt="telegram" height="40px"></a>
+                                <a href="#"><img src="image/x-logo-modified.png" alt="Twitter/x" height="35px"> </a>
+                            </div>
+                        </div>
+
+                        <div class="footer-links">
+                            <ul>
+                                <li>
+                                    <h3><a href="ehtiopia_history.html">The History of Ethiopia</a></h3>
+                                    <ul>
+                                        <li><a href="ancient_period.html">Ancient period</a></li>
+                                        <li><a href="medivel_period.html">Mendivel period</a></li>
+                                        <li><a href="pre_modern.html">17C and 18C Ethiopia History</a></li>
+                                        <li><a href="modern_period.html">Modern period</a></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <h3><a href="place.html">Historical and cultural places</a></h3>
+                                    <ul>
+                                        <li><a href="historical_places.html">Historical Places</a></li>
+                                        <li><a href="cultural_sites.html">Cultural Places</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li>
+                                    <h3><a href="event.html">Historical and cultural event</a></h3>
+                                    <ul>
+                                        <li><a href="historical_event.html">Historical Event</a></li>
+                                        <li><a href="cultural_event.html">Cultural Event</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="footer-note">&copy;2025 The history of Ethiopia. All rights reserved.</p>
+                
+            </div>
+        </div>
     </body>
 </html>
