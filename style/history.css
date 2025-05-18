@@ -1,7 +1,7 @@
 .page-list{
     flex: 1 1 250px;
     background-color: #f9f6f1;
-    width: 50%;
+    width: 350px;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -12,10 +12,16 @@
     padding: 0;
     margin: 0;
 }
+
+.page-list h1 {
+    color: #b87400;
+}
+
 .page-list li {
     margin-bottom: 15px; 
     padding: 10px;
 }
+
 .page-list li a {
     text-decoration: none;
     color: #8b0000;
@@ -25,8 +31,46 @@
 }
 
 .page-list a:hover{
-    color: #d62828;
+    color: #ff4f4f;
 }
+
+
+.hist-intro-description {
+   
+    display: flex;
+    border: 3px solid white;
+    margin-top: 0;
+}
+
+.hist-1 {
+    
+    margin: 10px;
+}
+
+.hist-2 {
+    
+    margin: 10px;
+}
+
+.hist-intro-description p {
+    background-color: #f9f6f1;
+    box-shadow: 2px;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-content h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    border: 2px solid white;
+    
+}
+
 
 /*.main-content > div:last-child {
   flex: 2 1 600px;
